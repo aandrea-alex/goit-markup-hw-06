@@ -1,12 +1,27 @@
 .footer-page {
   background-color: var(--navy-blue);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-page .container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  row-gap: 72px;
+}
+
+.footer-part-one {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+
+.footer-section-copyright {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
 }
 
 .footer-logo {
@@ -18,7 +33,7 @@
   text-transform: uppercase;
   color: var(--iris);
   display: inline-block;
-  margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-logo-accent {
@@ -27,20 +42,17 @@
 }
 
 .footer-logo-text {
+  width: 100%;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud);
-  width: 264px;
-}
-
-.footer-section-copyright {
-  width: 264px;
-  margin-right: 120px;
 }
 
 .footer-social-media {
-  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
 }
 
 .footer-social-media-title {
@@ -49,16 +61,14 @@
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-social-links {
   display: flex;
-  align-self: center;
   justify-content: flex-start;
-  gap: 16px;
+  column-gap: 16px;
   flex-shrink: 0;
-  margin: 0;
 }
 
 .footer-social-icon-container {
@@ -94,6 +104,9 @@
 .subscribe {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+  width: 100%;
 }
 
 .subscribe-title {
@@ -102,18 +115,20 @@
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
 }
 
 .subscribe-form {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 24px;
 }
 
 .subscribe-input-email {
+  width: 288px;
   color: var(--white);
   background-color: transparent;
-  width: 264px;
   height: 40px;
   font-size: 12px;
   line-height: 2;
@@ -163,7 +178,51 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer-logo-text,
+  .subscribe-input-email {
+    width: 264px;
+  }
+
+  .subscribe,
+  .subscribe-form,
+  .footer-social-media,
+  .footer-section-copyright,
+  .footer-page .container {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .footer-page .container {
+    padding-left: 108px;
+  }
+
+  .subscribe-form {
+    flex-wrap: nowrap;
+  }
+
+  .footer-part-one {
+    flex-wrap: nowrap;
+  }
 }
 
 @media screen and (min-width: 1158px) {
+  .footer-page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-page .container {
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: 0;
+    padding-left: 15px;
+  }
+
+  .footer-section-copyright {
+    margin-right: 96px;
+  }
+
+  .footer-part-one {
+    margin-right: 80px;
+  }
 }
