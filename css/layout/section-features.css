@@ -1,0 +1,48 @@
+.section-features-header {
+  color: var(--white);
+}
+
+.features {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-card {
+  max-width: calc((100% - 3 * 24px) / 4);
+}
+
+.feature-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  width: 100%;
+  padding: 24px 100px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--light-slate);
+  background-color: var(--cloud);
+  margin-bottom: 8px;
+}
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+}
+
+.feature-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
