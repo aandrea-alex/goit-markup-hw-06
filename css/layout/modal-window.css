@@ -28,8 +28,8 @@
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 24px;
-  min-width: 408px;
-  min-height: 584px;
+  width: 408px;
+  height: 584px;
   background: var(--dairy);
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -220,8 +220,9 @@
   fill: var(--cloud);
 }
 
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1158px) {
+@media screen and (max-width: 427px) {
+  .modal-window {
+    width: calc(100% - 32px);
+    height: 100vh;
+  }
 }
