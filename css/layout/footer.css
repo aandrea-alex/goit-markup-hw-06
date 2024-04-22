@@ -15,7 +15,6 @@
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 72px;
-  column-gap: 24px;
 }
 
 .footer-section-copyright {
@@ -178,6 +177,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer-part-one {
+    column-gap: 24px;
+  }
+
   .footer-logo-text,
   .subscribe-input-email {
     width: 264px;
@@ -206,6 +209,10 @@
 }
 
 @media screen and (min-width: 1158px) {
+  .footer-part-one {
+    column-gap: 0;
+  }
+
   .footer-page {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -219,7 +226,7 @@
   }
 
   .footer-section-copyright {
-    margin-right: 96px;
+    margin-right: 120px;
   }
 
   .footer-part-one {
