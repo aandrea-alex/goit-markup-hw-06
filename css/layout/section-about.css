@@ -1,5 +1,5 @@
 .section-about {
-  width: 100%;
+  max-width: 320px;
   background-color: var(--navy-blue);
   background-image: linear-gradient(var(--grey), var(--grey)),
     url('../../images/office-mobile@1x.jpg');
@@ -61,6 +61,7 @@
 
 @media screen and (min-width: 768px) {
   .section-about {
+    max-width: 768px;
     background-image: linear-gradient(var(--grey), var(--grey)),
       url('../../images/office-tablet@1x.jpg');
     padding-top: 112px;
